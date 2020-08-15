@@ -19,7 +19,7 @@ async function genICal() {
             uid: element.pk,
             start: new Date(data.starttime),
             end: new Date(data.endtime),
-            summary: `${lang[element.pk].tw} - ${data.category}`,
+            summary: `${lang[element.pk] ? lang[element.pk].tw : data.display_name} - ${data.category}`,
             description: `跑者: ${data.deprecated_runners}\n預估時間: ${data.run_time}\n英文名稱:${data.display_name}`,
         });
     });
@@ -30,6 +30,8 @@ async function genICal() {
         console.log("The file was saved!");
     }); 
 }
+if (!fs.existsSync('dist')){
+    fs.mkdirSync('dist');
+}
 
-fs.mkdirSync('dist');
 genICal();
