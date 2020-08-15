@@ -1,4 +1,4 @@
-# ical
+# ical ![status](https://github.com/runtogether-tw/ical/workflows/Node.js%20CI/badge.svg)
 自動產生GDQ活動所需日曆檔案
 
 ## 使用方法
