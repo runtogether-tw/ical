@@ -4,8 +4,8 @@ on:
   push:
     branches: [ master ]
   schedule:
-    # every 2 hour
-    - cron:  '0 */2 * * *'
+    # every 12 hour
+    - cron:  '0 */12 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
