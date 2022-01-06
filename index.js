@@ -18,7 +18,7 @@ async function genICal() {
             start: new Date(data.starttime),
             end: new Date(data.endtime),
             summary: `${lang[element.pk] ? lang[element.pk].tw : data.display_name} - ${data.category}`,
-            description: `跑者: ${data.deprecated_runners}\n${data.run_time}\n${data.display_name}`,
+            description: `跑者: ${data.deprecated_runners}\n預估時間: ${data.run_time}\n英文名稱:${data.display_name}`,
         });
     });
     fs.writeFile('dist/gdq-tw.ical', cal.toString(),(err)=>{
