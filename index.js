@@ -2,8 +2,8 @@ const axios = require('axios');
 const ical = require('ical-generator');
 const fs = require('fs');
 
-const EVENT = 37;
-const EVENT_NAME = 'AGDQ2022';
+const EVENT = 39;
+const EVENT_NAME = 'SGDQ2022';
 
 async function genICal() {
     const schedule = await axios.get(`https://gamesdonequick.com/tracker/search/?type=run&event=${EVENT}`).then(res => res.data);
