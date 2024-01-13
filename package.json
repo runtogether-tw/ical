@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.27.2",
-    "ical-generator": "^3.4.2"
+    "axios": "^1.6.5",
+    "ical-generator": "^6.0.0"
   }
 }

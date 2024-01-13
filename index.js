@@ -1,5 +1,5 @@
 const axios = require('axios');
-const ical = require('ical-generator');
+const { default: ical } = require('ical-generator');
 const fs = require('fs');
 
 const EVENT = 46;
